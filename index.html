@@ -8,37 +8,42 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+  <script>function CalcNumbers(result)
+    {
+        form.displayResult.value=form.displayResult.value+result;
+    }</script>
     <div class="calculator">
       <div class="frame">
-        <input type="text" class="display" placeholder="0" />
+        <form name="form">
+        <input type="text" class="display" placeholder="0" name="displayResult"/>
         <div class="row">
-          <input type="button" name="a1" class="button" value="AC" />
-          <input type="button" name="a1" class="button" value="C" />
-          <input type="button" name="a1" class="button" value="%" />
-          <input type="button" name="a1" class="button" value="/" />
+           <input type="button" name="ACb" class="button" value="AC" onclick="CalcNumbers(ACb.value)" />
+          <input type="button" name="a1" class="button" value="C" onclick="CalcNumbers(a1.value)" />
+          <input type="button" name="perb" class="button" value="%" onclick="CalcNumbers(perb.value)" />
+          <input type="button" name="divb" class="button" value="/" onclick="CalcNumbers(divb.value)" />
         </div>
         <div class="row">
-          <input type="button" name="a1" class="button" value="7" />
-          <input type="button" name="a1" class="button" value="8" />
-          <input type="button" name="a1" class="button" value="9" />
-          <input type="button" name="a1" class="button" value="*" />
+          <input type="button" name="b7" class="button" value="7" onclick="CalcNumbers(b7.value)" />
+          <input type="button" name="b8" class="button" value="8" onclick="CalcNumbers(b8.value)" />
+          <input type="button" name="b9" class="button" value="9" onclick="CalcNumbers(b9.value)" />
+          <input type="button" name="mulb" class="button" value="*" onclick="CalcNumbers(mulb.value)" />
         </div>
         <div class="row">
-          <input type="button" name="a1" class="button" value="4" />
-          <input type="button" name="a1" class="button" value="5" />
-          <input type="button" name="a1" class="button" value="6" />
-          <input type="button" name="a1" class="button" value="-" />
+          <input type="button" name="b4" class="button" value="4" onclick="CalcNumbers(b4.value)" />
+          <input type="button" name="b5" class="button" value="5" onclick="CalcNumbers(b5.value)" />
+          <input type="button" name="b6" class="button" value="6" onclick="CalcNumbers(b6.value)" />
+          <input type="button" name="subb" class="button" value="-" onclick="CalcNumbers(subb.value)" />
         </div>
         <div class="row">
-          <input type="button" name="a1" class="button" value="1" />
-          <input type="button" name="a1" class="button" value="2" />
-          <input type="button" name="a1" class="button" value="3" />
-          <input type="button" name="a1" class="button" value="+" />
+          <input type="button" name="b1" class="button" value="1" onclick="CalcNumbers(b1.value)" />
+          <input type="button" name="b2" class="button" value="2" onclick="CalcNumbers(b2.value)" />
+          <input type="button" name="b3" class="button" value="3" onclick="CalcNumbers(b3.value)" />
+          <input type="button" name="addb" class="button" value="+" onclick="CalcNumbers(addb.value)" />
         </div>
         <div class="row">
-          <input type="button" name="a1" class="button0" value="0" />
-          <input type="button" name="a1" class="button" value="." />
-          <input type="button" name="a1" class="button" value="=" />
+          <input type="button" name="b0" class="button0" value="0" onclick="CalcNumbers(b0.value)" />
+          <input type="button" name="bd" class="button" value="." onclick="CalcNumbers(bd.value)" />
+          <input type="button" name="equalb" class="button" value="=" onclick="displayResults.value=eral(displayResults.value)" />
         </div>
       </div>
     </div>
